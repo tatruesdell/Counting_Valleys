@@ -22,3 +22,4 @@ Input Format
 
 The first line contains an integer steps, the number of steps in the hike.
 The second line contains a single string path, of steps characters that describe the path.
+
