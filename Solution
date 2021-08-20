@@ -1,0 +1,15 @@
+Given a string path consisting of 'U' and 'D' characters for upward and downward steps, respectively, we want to count the number of valleys traversed. A valley
+has been defined as a sequence of steps occurring below sea level. We can count the number of valleys according to the following conditions: if a step has the
+value 'U' and the sea level is 0 units, then a valley has been traversed. The pseudocode looks something like this:
+
+function solution(int steps, string path):
+  valleys = 0
+  lvl = 0
+  for character in path:
+    if character is 'U':
+      level++
+    if character is 'D':
+      level--
+    if character is 'U' and lvl is 0:
+      valleys++
+  return valleys
